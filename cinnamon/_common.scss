@@ -148,7 +148,7 @@ StScrollBar {
   -slider-height: 0.3em;
   -slider-background-color: lighten($base_color, 5%);               //background of the trough
   -slider-border-color: transparentize($bg_color, 0.7);             //trough border color
-  -slider-active-background-color: $selected_bg_color;              //active trough fill
+  -slider-active-background-color: $nord9;              //active trough fill
   -slider-active-border-color: transparentize($bg_color, 0.7);      //active trough border
   -slider-border-width: 1px;
   -slider-handle-radius: 0.5em;
@@ -231,11 +231,11 @@ StScrollBar {
 
   &:checked { background-image: url("#{$asset_path}/switch/switch-on.svg"); }
 
-  .popup-menu-item:active & {
-    background-image: url("common-assets/switch/switch-off-selected.svg");
+//   .popup-menu-item:active & {
+//     background-image: url("common-assets/switch/switch-off-selected.svg");
 
-    &:checked { background-image: url("common-assets/switch/switch-on-selected.svg"); }
-  }
+//     &:checked { background-image: url("common-assets/switch/switch-on-selected.svg"); }
+//   }
 }
 
 //
@@ -642,7 +642,7 @@ StScrollBar {
   padding: .5em;
   min-width: 350px;
   border: 1px solid $borders_color;
-  background-color: $base_color;
+  background-color: $main_dark_color;
 }
 
 .calendar-events-no-events-box {
@@ -1299,7 +1299,7 @@ StScrollBar {
     padding: 10px;
     border: 1px solid rgba(0,0,0,0);
 
-    &:hover { @extend %button:hover; }
+    &:hover { @extend %button, :hover }
   }
 
   &-places {
@@ -1327,7 +1327,7 @@ StScrollBar {
 
     &-selected {
       padding: 7px;
-      @extend %button:hover;
+      @extend %button, :hover;
 
       &:highlighted { font-weight: bold; }
     }
