@@ -1291,7 +1291,7 @@ StScrollBar {
     margin: auto;
     padding: 10px;
     transition-duration: 300;
-    background-color: $bg_color;
+    background-color: $nord0;
     border: 1px solid $borders_color;
   }
 
@@ -1299,7 +1299,7 @@ StScrollBar {
     padding: 10px;
     border: 1px solid rgba(0,0,0,0);
 
-    &:hover { @extend %button, :hover }
+    &:hover { @include button(hover); }
   }
 
   &-places {
@@ -1327,7 +1327,7 @@ StScrollBar {
 
     &-selected {
       padding: 7px;
-      @extend %button, :hover;
+      @include button(hover);
 
       &:highlighted { font-weight: bold; }
     }
