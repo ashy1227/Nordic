@@ -8,4 +8,4 @@ Encoding=UTF-8
 GtkTheme=Nordic
 MetacityTheme=Nordic
 IconTheme=Zafiro-icons
-ButtonLayout=:minimize,maximize,close
+ButtonLayout=close,minimize,maximize:
